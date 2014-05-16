@@ -10,3 +10,8 @@
     width: 50%;
     height: 300px;
 }
+
+.Overlay input {
+    flex-direction: column;
+    flex-grow:0px;
+}
