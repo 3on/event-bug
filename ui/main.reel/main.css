@@ -3,8 +3,11 @@
     display: -moz-flex;
     display: -ms-flex;
     display: flex;
+
 }
 
 .Overlay {
     background-color: rgba(0,0,0,0.5);
+    width: 50%;
+    height: 50%;
 }
