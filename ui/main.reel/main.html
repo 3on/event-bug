@@ -45,7 +45,23 @@
             "properties": {
                 "element": {"#": "overlay"}
             }
+        },
+        "cancelEditing": {
+            "prototype": "montage/composer/key-composer",
+            "properties": {
+                "keys": "escape",
+                "component": {"@": "owner"},
+                "identifier": "cancelEditing",
+                "element": {"#": "binding-jig"}
+            },
+            "listeners": [
+                {
+                    "type": "keyPress",
+                    "listener": {"@": "owner"}
+                }
+                ]
         }
+        
     }
     </script>
 </head>
