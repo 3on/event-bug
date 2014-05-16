@@ -19,5 +19,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function (evt) {
             this.templateObjects.overlay.show();
         }
-    }
+    },
+    
+    handleKeyPress: {
+        value: function(evt) {
+            // do nothing for now
+        }
+    },
 });
