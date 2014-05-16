@@ -13,6 +13,33 @@
                 "element": {"#": "main"}
             }
         },
+        "autocomplete": {
+            "prototype": "matte/ui/autocomplete/autocomplete.reel",
+            "properties": {
+                "element": {"#": "autocomplete"}
+            }
+        },
+        "button": {
+            "prototype": "matte/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "label": "Button",
+                "type": "button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
             "properties": {
@@ -24,7 +51,10 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <div data-montage-id="overlay"></div>
+        <button data-montage-id="button"></button>
+        <div data-montage-id="overlay">
+            <input data-montage-id="autocomplete">
+        </div>
     </div>
 </body>
 </html>
