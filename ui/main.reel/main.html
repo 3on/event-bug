@@ -16,7 +16,8 @@
         "autocomplete": {
             "prototype": "matte/ui/autocomplete/autocomplete.reel",
             "properties": {
-                "element": {"#": "autocomplete"}
+                "element": {"#": "autocomplete"},
+                "delegate": {"@": "owner"},
             }
         },
         "button": {
@@ -51,8 +52,7 @@
             "properties": {
                 "keys": "escape",
                 "component": {"@": "owner"},
-                "identifier": "cancelEditing",
-                "element": {"#": "autocomplete"}
+                "identifier": "cancelEditing"
             },
             "listeners": [
                 {
