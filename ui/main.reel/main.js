@@ -17,7 +17,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     handleAction: {
         value: function (evt) {
-            
+            this.templateObjects.overlay.show();
         }
     }
 });
