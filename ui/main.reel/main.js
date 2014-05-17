@@ -23,7 +23,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     handleKeyPress: {
         value: function(evt) {
-            // do nothing for now
             console.log(evt)
         }
     },
