@@ -29,6 +29,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     autocompleteShouldGetSuggestions: {
         value: function (autocomplete, searchTerm) {
-             autocomplete.suggestions = ["L'aile ou la cuisse ", "La Grande Vadrouille",  "La belle Américaine"]   
+             autocomplete.suggestions = ["L'aile ou la cuisse ", "La Grande Vadrouille",  "La belle Américaine"]; 
         }
+    }
 });
