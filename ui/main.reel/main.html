@@ -52,7 +52,7 @@
             "properties": {
                 "keys": "escape",
                 "component": {"@": "owner"},
-                "identifier": "cancelEditing"
+                "identifier": "cancelAutocomplete"
             },
             "listeners": [
                 {
@@ -60,6 +60,20 @@
                     "listener": {"@": "owner"}
                 }
             ]
+        },
+        "cancelEditing": {
+            "prototype": "montage/composer/key-composer",
+            "properties": {
+                "keys": "escape",
+                "component": {"@": "owner"},
+                "identifier": "cancelEditing"
+            },
+            "listeners": [
+                {
+                    "type": "keyPress",
+                    "listener": {"@": "owner"}
+                }
+                ]
         }
     }
     </script>
