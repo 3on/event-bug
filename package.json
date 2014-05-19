@@ -2,9 +2,7 @@
     "name": "event-bug",
     "version": "0.1.0",
     "dependencies": {
-        "montage": "~0.14.0",
-        "matte": "0.2.0",
-        "montage-jsonp": "git+https://github.com/3on/montage-jsonp.git#278a3f30f423959586073ce0dccc83401ef39026"
+        "montage": "~0.14.0"
     },
     "devDependencies": {
         "montage-testing": "~0.4.0"
