@@ -41,19 +41,13 @@
                 }
             ]
         },
-        "overlay": {
-            "prototype": "montage/ui/overlay.reel",
-            "properties": {
-                "element": {"#": "overlay"}
-            }
-        },
-        "cancelAutocomplete": {
+        "cancel": {
             "prototype": "montage/composer/key-composer",
             "properties": {
-                "keys": "escape",
+                "element": {"@": "owner"},
                 "component": {"@": "owner"},
-                "identifier": "cancelAutocomplete",
-                "element": {"@": "autocomplete"}
+                "identifier": "cancel",
+                "keys": "escape"
             },
             "listeners": [
                 {
@@ -62,20 +56,26 @@
                 }
             ]
         },
-        "cancel": {
+        "cancelAutocomplete": {
             "prototype": "montage/composer/key-composer",
             "properties": {
-                "keys": "escape",
+                "element": {"@": "autocomplete"},
                 "component": {"@": "owner"},
-                "identifier": "cancel",
-                "element": {"@": "owner"}
+                "identifier": "cancelAutocomplete",
+                "keys": "escape"
             },
             "listeners": [
                 {
                     "type": "keyPress",
                     "listener": {"@": "owner"}
                 }
-              ]
+            ]
+        },
+        "overlay": {
+            "prototype": "montage/ui/overlay.reel",
+            "properties": {
+                "element": {"#": "overlay"}
+            }
         }
     }
     </script>
